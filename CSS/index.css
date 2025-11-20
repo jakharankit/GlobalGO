@@ -173,7 +173,10 @@ footer {
   position: relative;
 }
 
-.faq-item input[type="checkbox"] {
+/* .faq-item input[type="checkbox"] {
+  display: none;
+} */
+.checkbox{
   display: none;
 }
 
@@ -220,8 +223,6 @@ footer {
   content: '-';
   transform: rotate(180deg);
 }
-
-
 
 * {
   font-family: "Lexend Deca", sans-serif;
