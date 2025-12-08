@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — GlobalGO</title>
+  <link rel="stylesheet" href="../CSS/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo" height="30" class="logopng"><span>GlobalGO</span></div>
+        <nav class="lists">
+            <a href="index.html" class="a1">Home</a>
+            <a href="properties.html" class="a2" >Properties</a>
+            <a href="about.html" class="a3">About</a>
+            <button class="login-btn"><a href="signin.html" class="a4">Log In</a></button>
+        </nav>
+    </header>
+
+
+    <div>
+        <div>
+            <img src="../images/logo.png" alt="logo" class="image">
+            <p class="a">Sign In to GlobalGO</p>
+            <p class="b">Access your GlobalGO account securely.</p><br>
+            <form action="" method="post" id="login-form">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required><br><br>
+                
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required><br><br>
+
+                <button type="submit" id="submit-btn">Sign In</button>
+            </form>
+
+            <a href="#" style="color: rgb(47, 112, 223);">Forgot Password?</a>
+        </div>
+    </div>
+    <script>
+      // Show a success message on form submission (demo only)
+      const loginForm = document.getElementById('login-form');
+      if (loginForm) {
+        loginForm.addEventListener('submit', function (event) {
+          event.preventDefault(); // prevent page reload since no backend
+          alert('Login successful!');
+        });
+      }
+
+    </script>
+</body>
+</html>
